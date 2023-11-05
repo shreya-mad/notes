@@ -1,0 +1,144 @@
+/* Main Container */
+.selectednote-cont{
+    width: 100%;
+    background-color: #F7ECDC;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+/* Top Container */
+.selectednote-cont .top{
+    width: 100%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    background-color: #E8E8E8;
+}
+.selectednote-cont .top > img{
+    width: 1rem;
+    height: 0.5rem;
+    margin-left: 10px;
+}
+.selectednote-cont .top{
+    display: flex;
+}
+.selectednote-cont .top .group{
+    margin-top: 0px;
+}
+
+/* Middle Container */
+.selectednote-cont .middle{
+    width: 100%;
+    height: 65%;
+    background-color: #F7ECDC;
+}
+.selectednote-cont .middle{
+    width: 100%;
+    height: 65%;
+    background-color: #F7ECDC;
+    overflow: auto;
+    padding: 1rem;
+}
+.selectednote-cont .middle .note{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+    align-items:baseline
+}
+.selectednote-cont .middle .note .notetiming p{
+    font-size: 13px;
+}
+.selectednote-cont .middle .note .notedetail{
+    margin-left: 2rem;
+    width: 60%;
+    font-size: 13px;
+    line-height: 160.188%;
+    letter-spacing: 0.63px;
+}
+
+/* Bottom Container */
+.selectednote-cont .bottom{
+    width: 100%;
+    height: 25%;
+    background-color: #E8E8E8;
+    padding: 1rem 1rem;
+    position: relative;
+}
+.selectednote-cont .bottom img{
+    position: absolute;
+    bottom: 30px;
+    right:40px;
+}
+.selectednote-cont .bottom textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    border: 1px solid #CCC;
+}
+.selectednote-cont .bottom textarea::placeholder{
+    color: #9A9A9A;
+    font-size: 15px;
+    letter-spacing: 0.596px;
+}
+
+@media (min-width: 40em){
+    /* Background Container */
+    .background-cont{
+        display: flex !important;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F7ECDC;
+    }
+    .background-cont h2{
+        font-size: 40px;
+        letter-spacing: 1px;
+        margin: 0px;
+    }
+    .background-cont div{
+        display: flex;
+        align-items: center;
+        width: 11.5rem;
+        margin-top: 10rem;
+        justify-content: space-between;
+    }
+    .background-cont div span{
+        color: #292929;
+        letter-spacing: 0.44px;
+    }
+    .background-cont p{
+        width: 30rem;
+    }
+    .selectednote-cont{
+        width: 80%;
+        display: flex !important;
+    }
+    .selectednote-cont .top > img{
+        display: none;
+    }
+    .selectednote-cont .middle{
+        padding: 2rem;
+    }
+    .selectednote-cont .middle .note .notetiming p{
+        font-size: 16px;
+    }    
+    .selectednote-cont .middle .note .notedetail{
+        width: 85%;
+        font-size: 16px;
+    }
+    .selectednote-cont .bottom{
+        padding: 1rem 2rem;
+    }
+    .selectednote-cont .bottom textarea{
+        font-size: 25px;
+        padding: 1rem;
+    }
+    .selectednote-cont .bottom textarea::placeholder{
+        font-size: 25px;
+    }
+}
